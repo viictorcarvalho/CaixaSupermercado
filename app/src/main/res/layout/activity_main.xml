@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivCarrinho"
+        android:layout_width="@dimen/tamanho_125"
+        android:layout_height="@dimen/tamanho_125"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/descricao_img"
+        android:src="@drawable/carrinho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="214dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/texto_app"
+        android:textSize="@dimen/tamanho_texto_13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ivCarrinho"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etProduto"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:hint="@string/nome_produto"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/tvDescricao"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/ivCarrinho"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescricao" />
+
+    <EditText
+        android:id="@+id/etQntdProduto"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantidade_produto"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etProduto"
+        app:layout_constraintStart_toStartOf="@+id/etProduto"
+        app:layout_constraintTop_toBottomOf="@+id/etProduto" />
+
+    <EditText
+        android:id="@+id/etValorProduto"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:hint="@string/valor_produto"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etQntdProduto"
+        app:layout_constraintStart_toStartOf="@+id/etQntdProduto"
+        app:layout_constraintTop_toBottomOf="@+id/etQntdProduto"/>
+
+    <Button
+        android:id="@+id/btnCalcularTotal"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/calcular"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etValorProduto"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/etValorProduto"
+        app:layout_constraintTop_toBottomOf="@+id/etValorProduto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

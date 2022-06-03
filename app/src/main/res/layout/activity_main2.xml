@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".segundaTela.MainActivity2">
+
+    <ImageView
+        android:id="@+id/ivCarrinho"
+        android:layout_width="@dimen/tamanho_125"
+        android:layout_height="@dimen/tamanho_125"
+        android:contentDescription="@string/descricao_img"
+        android:src="@drawable/carrinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMensagem"
+        android:textStyle="bold"
+        android:layout_width="299dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/valor_total"
+        android:textAlignment="center"
+        android:textSize="@dimen/tamanho_texto_16"
+        app:layout_constraintEnd_toEndOf="@+id/ivCarrinho"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/ivCarrinho"
+        app:layout_constraintTop_toBottomOf="@+id/ivCarrinho" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="291dp"
+        android:layout_height="49dp"
+        android:text="@string/refazer_compras"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMensagem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tamanho_125">125dp</dimen>
+    <dimen name="largura_0">0dp</dimen>
+    <dimen name="tamanho_texto_13">13sp</dimen>
+    <dimen name="tamanho_texto_16">16sp</dimen>
+</resources>
